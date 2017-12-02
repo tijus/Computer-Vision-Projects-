@@ -1,0 +1,10 @@
+im = imread('../data/butterfly.jpg');
+im =im2double(im);
+im = rgb2gray(im);
+downsampled_image = downsample(im,4);
+subplot(1,2,1);
+title("Original Image");
+imshow(im);
+subplot(1,2,2);
+title("downsampledImage");
+imshow(im);
